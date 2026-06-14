@@ -23,7 +23,7 @@
             theme: {
                 extend: {
                     colors: {
-                        highlight: '#E8F9FF',
+                        highlight: '#ffffff',
                         outline: 'rgba(255,255,255,0.08)'
                     },
                     spacing: {
@@ -50,7 +50,7 @@
 
     <style>
         body {
-            background-color: #071952;
+            background-color: #3550f7;
             color: #ffffff;
             overflow-x: hidden;
         }
@@ -62,13 +62,11 @@
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #071952; }
-        ::-webkit-scrollbar-thumb { background: #006BFF; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #E8F9FF; }
+        ::-webkit-scrollbar-track { background: #3550f7; }
+        ::-webkit-scrollbar-thumb { background: #ffffff; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #000000; }
 
-        /* Custom Interactive Cursor Tracking Elements */
-
-        /* Hover Lift Animation untuk elemen */
+        /* Hover Lift Animation */
         .hover-lift {
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s, background-color 0.3s;
         }
@@ -76,39 +74,39 @@
             transform: translateY(-4px);
         }
 
-        /* Filter Tab Buttons Animasi Mewah */
+        /* Filter Tab Buttons */
         .tab-btn {
             font-family: 'Space Mono', monospace;
             font-size: 10px;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             padding: 10px 20px;
-            color: #9ca3af; 
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            background: rgba(255, 255, 255, 0.03);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(8px);
-            border-radius: 4px; 
+            border-radius: 999px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-flex;
             align-items: center;
             cursor: pointer;
         }
         .tab-btn.active {
-            background: #E8F9FF;
-            color: #006BFF;
-            border-color: #E8F9FF;
+            background: #000000;
+            color: #ffffff;
+            border-color: #000000;
             font-weight: bold;
         }
         .tab-btn:hover:not(.active) {
-            background: rgba(255, 255, 255, 0.08);
-            color: #E8F9FF;
-            border-color: #E8F9FF;
+            background: #000000;
+            color: #ffffff;
+            border-color: #000000;
             transform: translateY(-4px);
-            box-shadow: 0 6px 15px rgba(232, 249, 255, 0.15);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
-<body class="font-body antialiased selection:bg-[#E8F9FF] selection:text-[#006BFF]">
+<body class="font-body antialiased selection:bg-white selection:text-[#3550f7]">
 
     <div class="custom-cursor-dot hidden md:block" id="cursor-dot"></div>
     <div class="custom-cursor-ring hidden md:block" id="cursor-ring"></div>
@@ -118,20 +116,20 @@
             
             <div class="w-28 hidden md:block"></div>
 
-            <nav class="pointer-events-auto backdrop-blur-md bg-[rgba(0,0,0,0.45)] border border-[rgba(255,255,255,0.05)] shadow-2xl rounded-full px-8 py-3 hidden md:flex items-center gap-8 mx-auto">
-                <a href="#hero" class="font-mono-custom text-xs text-white hover:text-[#E8F9FF] uppercase tracking-widest transition-colors">Home</a>
-                <a href="#about" class="font-mono-custom text-xs text-gray-400 hover:text-[#E8F9FF] uppercase tracking-widest transition-colors">About</a>
-                <a href="#portfolio" class="font-mono-custom text-xs text-gray-400 hover:text-[#E8F9FF] uppercase tracking-widest transition-colors">Works</a>
-                <a href="#experience" class="font-mono-custom text-xs text-gray-400 hover:text-[#E8F9FF] uppercase tracking-widest transition-colors">Experience</a>
-                <a href="#contact" class="font-mono-custom text-xs text-[#E8F9FF] font-bold hover:text-white uppercase tracking-widest transition-colors">Contact</a>
+            <nav class="pointer-events-auto backdrop-blur-md bg-[rgba(0,0,0,0.25)] border border-[rgba(255,255,255,0.15)] shadow-2xl rounded-full px-8 py-3 hidden md:flex items-center gap-8 mx-auto">
+                <a href="#hero" class="font-mono-custom text-xs text-white hover:text-white/70 uppercase tracking-widest transition-colors">Home</a>
+                <a href="#about" class="font-mono-custom text-xs text-white/70 hover:text-white uppercase tracking-widest transition-colors">About</a>
+                <a href="#portfolio" class="font-mono-custom text-xs text-white/70 hover:text-white uppercase tracking-widest transition-colors">Works</a>
+                <a href="#experience" class="font-mono-custom text-xs text-white/70 hover:text-white uppercase tracking-widest transition-colors">Experience</a>
+                <a href="#contact" class="font-mono-custom text-xs text-white font-bold hover:text-white/70 uppercase tracking-widest transition-colors">Contact</a>
             </nav>
 
             <div class="w-auto flex justify-end">
-                <a href="https://wa.me/62895333250098" target="_blank" class="pointer-events-auto hidden md:flex items-center gap-2 bg-[#E8F9FF] text-[#006BFF] px-6 py-2.5 rounded-full font-mono-custom text-xs font-bold uppercase tracking-widest hover:bg-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(232,249,255,0.2)]">
+                <a href="https://wa.me/62895333250098" target="_blank" class="pointer-events-auto hidden md:flex items-center gap-2 bg-black text-[#ffffff] px-6 py-2.5 rounded-full font-mono-custom text-xs font-bold uppercase tracking-widest hover:bg-black/90 hover:scale-105 transition-all shadow-lg">
                     Let's Talk <i class="fa-solid fa-arrow-right-long"></i>
                 </a>
 
-                <button @click="mobileMenu = !mobileMenu" class="pointer-events-auto md:hidden backdrop-blur-md bg-[rgba(0,0,0,0.45)] border border-[rgba(255,255,255,0.05)] text-white p-3 rounded-full flex items-center justify-center hover:text-[#E8F9FF] transition-colors shadow-lg">
+                <button @click="mobileMenu = !mobileMenu" class="pointer-events-auto md:hidden backdrop-blur-md bg-[rgba(0,0,0,0.45)] border border-[rgba(255,255,255,0.05)] text-white p-3 rounded-full flex items-center justify-center hover:text-white/70 transition-colors shadow-lg">
                     <i class="fa-solid" :class="mobileMenu ? 'fa-xmark' : 'fa-bars-staggered'"></i>
                 </button>
             </div>
@@ -144,172 +142,134 @@
              x-transition:leave="transition ease-in duration-200"
              x-transition:leave-start="opacity-100 translate-y-0"
              x-transition:leave-end="opacity-0 -translate-y-4"
-             class="pointer-events-auto md:hidden absolute top-20 left-4 right-4 backdrop-blur-xl bg-[#006BFF]/95 border border-[rgba(255,255,255,0.1)] rounded-2xl p-6 shadow-2xl flex flex-col gap-5 text-center" x-cloak>
+             class="pointer-events-auto md:hidden absolute top-20 left-4 right-4 backdrop-blur-xl bg-[#3550f7]/95 border border-[rgba(255,255,255,0.15)] rounded-2xl p-6 shadow-2xl flex flex-col gap-5 text-center" x-cloak>
             <a @click="mobileMenu = false" href="#hero" class="font-mono-custom text-sm text-white uppercase tracking-widest">Home</a>
-            <a @click="mobileMenu = false" href="#about" class="font-mono-custom text-sm text-gray-300 uppercase tracking-widest">About</a>
-            <a @click="mobileMenu = false" href="#portfolio" class="font-mono-custom text-sm text-gray-300 uppercase tracking-widest">Works</a>
-            <a @click="mobileMenu = false" href="#experience" class="font-mono-custom text-sm text-gray-300 uppercase tracking-widest">Experience</a>
-            <a @click="mobileMenu = false" href="#contact" class="font-mono-custom text-sm text-gray-300 uppercase tracking-widest">Contact</a>
-            <a @click="mobileMenu = false" href="https://wa.me/62895333250098" target="_blank" class="font-mono-custom text-sm text-[#006BFF] bg-[#E8F9FF] py-3 rounded-full uppercase tracking-widest font-bold mt-2">Let's Talk</a>
+            <a @click="mobileMenu = false" href="#about" class="font-mono-custom text-sm text-white/70 uppercase tracking-widest">About</a>
+            <a @click="mobileMenu = false" href="#portfolio" class="font-mono-custom text-sm text-white/70 uppercase tracking-widest">Works</a>
+            <a @click="mobileMenu = false" href="#experience" class="font-mono-custom text-sm text-white/70 uppercase tracking-widest">Experience</a>
+            <a @click="mobileMenu = false" href="#contact" class="font-mono-custom text-sm text-white/70 uppercase tracking-widest">Contact</a>
+            <a @click="mobileMenu = false" href="https://wa.me/62895333250098" target="_blank" class="font-mono-custom text-sm text-[#3550f7] bg-white py-3 rounded-full uppercase tracking-widest font-bold mt-2">Let's Talk</a>
         </div>
     </header>
 
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden z-10 pt-20">
-    
-    <div id="threads-container" class="absolute inset-0 z-0 pointer-events-auto"></div>
-    
-    <div class="absolute inset-0 bg-third/50 z-0 pointer-events-none"></div>
+    <section id="hero" class="relative min-h-screen flex flex-col justify-between overflow-hidden z-10 bg-white pt-28 pb-16 px-6 md:px-16">
 
-        <div class="absolute top-1/4 left-[12%] text-[#E8F9FF]/20 text-4xl -rotate-12 animate-[bounce_4s_infinite] pointer-events-none" data-aos="fade-in" data-aos-delay="400">
-            <i class="fa-solid fa-pen-nib"></i>
-        </div>
-        <div class="absolute bottom-[22%] right-[12%] text-[#E8F9FF]/20 text-5xl rotate-12 animate-[pulse_3s_infinite] pointer-events-none" data-aos="fade-in" data-aos-delay="600">
-            <i class="fa-solid fa-layer-group"></i>
-        </div>
-        <div class="absolute top-[28%] right-[18%] text-[#E8F9FF]/10 text-3xl animate-[bounce_5s_infinite] pointer-events-none" data-aos="fade-in" data-aos-delay="500">
-            <i class="fa-solid fa-video"></i>
-        </div>
-        <div class="absolute bottom-[28%] left-[18%] text-[#E8F9FF]/10 text-3xl -rotate-45 animate-[pulse_4s_infinite] pointer-events-none" data-aos="fade-in" data-aos-delay="700">
-            <i class="fa-solid fa-bezier-curve"></i>
-        </div>
+        <!-- Nav pills row (duplikasi visual dari screenshot, di bawah fixed header) -->
+        <!-- Center content -->
+        <div class="flex flex-col items-center justify-center text-center w-full max-w-7xl mx-auto flex-1 py-8">
 
-        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center w-full">
-            
-            <p class="font-mono-custom text-[#E8F9FF] text-xs md:text-sm uppercase tracking-[0.3em] mb-4" data-aos="fade-down">
-                Creating Dynamic Visual Paradigms.
+            <!-- Tagline spasi lebar -->
+            <p class="font-mono-custom text-black/60 text-xs md:text-sm uppercase tracking-[0.4em] mb-6" data-aos="fade-down" data-aos-delay="100">
+                Graphic Designer &amp; Motion Graphic
             </p>
 
-            <h1 class="font-display font-black italic uppercase leading-[0.83] flex flex-col items-center justify-center w-full select-none mb-6">
-                <span class="text-white text-[16vw] md:text-[10.5rem] tracking-tight hover:scale-[1.02] transition-transform duration-500" data-aos="fade-up" data-aos-delay="100">
-                    PORTO
-                </span>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#E8F9FF] md:[-webkit-text-stroke:2.5px_#E8F9FF] text-[16vw] md:text-[10.5rem] tracking-tight md:ml-28 hover:scale-[1.02] transition-transform duration-500" data-aos="fade-up" data-aos-delay="200">
-                    FOLIO
-                </span>
+            <!-- Heading raksasa PORTOFOLIO -->
+            <h1 class="font-display font-black uppercase text-[#3550f7] leading-[0.88] select-none mb-4 w-full"
+                style="font-size: clamp(4rem, 16vw, 14rem); letter-spacing: -0.02em;"
+                data-aos="fade-up" data-aos-delay="150">
+                PORTOFOLIO
             </h1>
 
-            <div class="relative flex items-center justify-center h-24 md:h-36 w-full text-center overflow-visible"
-                 data-aos="fade-up" data-aos-delay="300"
-                 x-data="{
-                     textRotate: ['MOTION FLYER', 'SOCIAL MEDIA', 'GREETING', 'PUZZLE FEED', 'FOOTBALL FLYER', 'AFTERMOVIE VIDEO'],
-                     rotateIndex: 0,
-                     init() {
-                         setInterval(() => {
-                             this.rotateIndex = this.rotateIndex >= this.textRotate.length - 1 ? 0 : this.rotateIndex + 1;
-                         }, 2000);
-                     }
-                 }">
-                <template x-for="(text, index) in textRotate" :key="index">
-                    <div x-show="rotateIndex === index"
-                         x-transition:enter="transition ease-in-out duration-1000"
-                         x-transition:enter-start="opacity-0 translate-y-6 scale-90"
-                         x-transition:enter-end="opacity-100 translate-y-0 scale-100"
-                         x-transition:leave="transition ease-in-out duration-500 absolute"
-                         x-transition:leave-start="opacity-100 translate-y-0 scale-100"
-                         x-transition:leave-end="opacity-0 -translate-y-6 scale-90"
-                         class="absolute text-5xl sm:text-6xl md:text-7xl font-display font-black italic tracking-wide text-highlight drop-shadow-[0_0_20px_rgba(232,249,255,0.3)] whitespace-nowrap cursor-pointer hover:scale-110 transition-transform"
-                         x-text="text">
-                    </div>
-                </template>
-            </div>
+            <!-- Sub-teks SELECTED WORKS -->
+            <p class="font-mono-custom text-black/50 text-xs md:text-sm uppercase tracking-[0.35em] mb-10" data-aos="fade-up" data-aos-delay="250">
+                Selected Works <strong class="text-black/70">2023 – 2026</strong>
+            </p>
 
-            <div class="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-center w-full sm:w-auto" data-aos="fade-up" data-aos-delay="400">
-                <a href="#portfolio" class="bg-[#E8F9FF] text-[#006BFF] font-mono-custom font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(232,249,255,0.2)] w-full sm:w-auto justify-center">
+            <!-- Tombol -->
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center" data-aos="fade-up" data-aos-delay="350">
+                <a href="#portfolio" class="bg-black text-white font-body font-bold text-base px-10 py-4 rounded-full hover:opacity-80 hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center flex items-center gap-3">
                     View Projects <i class="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="#contact" class="border border-[#E8F9FF]/40 text-[#E8F9FF] font-mono-custom font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full flex items-center gap-3 hover:bg-[#E8F9FF]/10 hover:border-[#E8F9FF] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center">
+                <a href="#contact" class="bg-[#3550f7] text-white font-body font-bold text-base px-10 py-4 rounded-full hover:opacity-90 hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center flex items-center gap-3">
                     Contact Me <i class="fa-regular fa-paper-plane"></i>
                 </a>
             </div>
 
         </div>
+
     </section>
 
-    <div class="bg-[#E8F9FF] py-5 overflow-hidden relative z-20 shadow-[0_0_30px_rgba(232,249,255,0.15)] flex border-y border-[#E8F9FF]/50">
-        <div class="flex w-max animate-marquee font-display font-black italic text-4xl md:text-5xl uppercase tracking-wider">
-            
-            <div class="flex items-center px-4 gap-8">
-                <span class="text-[#006BFF]">MOTION FLYER</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">SOCIAL MEDIA</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-[#006BFF]">GREETING</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">PUZZLE FEED</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-[#006BFF]">FOOTBALL FLYER</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">AFTERMOVIE VIDEO</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-            </div>
-            
-            <div class="flex items-center px-4 gap-8">
-                <span class="text-[#006BFF]">MOTION FLYER</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">SOCIAL MEDIA</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-[#006BFF]">GREETING</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">PUZZLE FEED</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-[#006BFF]">FOOTBALL FLYER</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-                <span class="text-transparent [-webkit-text-stroke:1.5px_#006BFF]">AFTERMOVIE VIDEO</span>
-                <i class="fa-solid fa-asterisk text-[#006BFF] text-2xl"></i>
-            </div>
-
+    <div class="bg-[#3550f7] py-5 overflow-hidden relative z-20 flex border-y border-white/20">
+    <div class="flex w-max animate-marquee font-display font-black italic text-4xl md:text-5xl uppercase tracking-wider">
+        
+        <div class="flex items-center px-4 gap-8">
+            <span class="text-white">MotionFlyer</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-transparent [-webkit-text-stroke:1.5px_#ffffff]">ColorGrading</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-white">PuzzleFeed</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-transparent [-webkit-text-stroke:1.5px_#ffffff]">SocialMedia</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-white">MotionADS</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
         </div>
-    </div>
+        
+        <div class="flex items-center px-4 gap-8">
+            <span class="text-white">MotionFlyer</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-transparent [-webkit-text-stroke:1.5px_#ffffff]">ColorGrading</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-white">PuzzleFeed</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-transparent [-webkit-text-stroke:1.5px_#ffffff]">SocialMedia</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+            <span class="text-white">MotionADS</span>
+            <i class="fa-solid fa-asterisk text-white text-2xl"></i>
+        </div>
 
-    <section id="about" class="py-24 relative z-20 bg-[#071952] border-t border-outline">
+    </div>
+</div>
+
+    <section id="about" class="py-24 relative z-20 bg-[#FFFFFF] border-t border-blue/10">
         <div class="max-w-5xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
                 
                 <div data-aos="fade-right">
-                    <span class="font-mono-custom text-[10px] text-[#E8F9FF] tracking-[0.3em] uppercase block mb-3">01 // About Me</span>
-                    <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase mb-8 text-white">Aditya Priatama</h2>
-                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8 font-body">
+                    <span class="font-mono-custom text-[10px] text-[#3550f7] tracking-[0.3em] uppercase block mb-3">01 // About Me</span>    
+                    <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase mb-8 text-[#3550f7]">Aditya Priatama</h2>    
+                    <p class="text-[#3550f7] text-base md:text-lg leading-relaxed mb-8 font-body">
                         I'm Aditya Priatama, born in Bandung on November 22, 2004. I'm a professional Graphic Designer and Motion Graphic Designer with more than 3 years of experience. I've worked on various creative projects, from social media content and marketplace ads to video production for promotions, branding, and digital campaigns.
                     </p>
 
                     <div data-aos="fade-up" data-aos-delay="200">
-                        <p class="font-mono-custom text-[10px] text-gray-400 uppercase tracking-widest mb-4">Software Expertise</p>
-                        <div class="flex items-center gap-3 flex-wrap">
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="Photoshop">
-                                <span class="text-[#31A8FF] font-bold text-[13px]">Ps</span>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="After Effects">
-                                <span class="text-[#9999FF] font-bold text-[13px]">Ae</span>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="Premiere Pro">
-                                <span class="text-[#9999FF] font-bold text-[13px]">Pr</span>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="Illustrator">
-                                <span class="text-[#FF9A00] font-bold text-[13px]">Ai</span>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="Lightroom">
-                                <span class="text-[#31A8FF] font-bold text-[13px]">Lr</span>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="Blender">
-                                <i class="fa-solid fa-circle-nodes text-orange-400 text-[13px]"></i>
-                            </div>
-                            <div class="w-10 h-10 bg-white/5 backdrop-blur-md flex items-center justify-center hover-lift border border-outline hover:border-highlight transition-all rounded-md shadow-lg" title="CapCut">
-                                <span class="text-white font-black text-[13px] tracking-tighter italic">Cc</span>
-                            </div>
-                        </div>
-                    </div>
+    <p class="font-mono-custom text-[10px] text-gray-400 uppercase tracking-widest mb-4">Software Expertise</p>
+    <div class="flex items-center gap-3 flex-wrap">
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="Photoshop">
+            <span class="text-[#31A8FF] font-bold text-[13px]">Ps</span>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="After Effects">
+            <span class="text-[#9999FF] font-bold text-[13px]">Ae</span>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="Premiere Pro">
+            <span class="text-[#9999FF] font-bold text-[13px]">Pr</span>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="Illustrator">
+            <span class="text-[#FF9A00] font-bold text-[13px]">Ai</span>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="Lightroom">
+            <span class="text-[#31A8FF] font-bold text-[13px]">Lr</span>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="Blender">
+            <i class="fa-solid fa-circle-nodes text-orange-400 text-[13px]"></i>
+        </div>
+        <div class="w-10 h-10 bg-blue/5 backdrop-blur-md flex items-center justify-center hover-lift border border-[#3550f7] hover:bg-[#3550f7]/20 transition-all rounded-md shadow-lg" title="CapCut">
+            <span class="text-black font-black text-[13px] tracking-tighter italic">Cc</span>
+        </div>
+    </div>
+</div>
                 </div>
 
                <div class="relative w-full max-w-[350px] mx-auto lg:mx-0" data-aos="fade-left">
     <div class="relative group">
         
-        <div class="absolute -inset-1 bg-gradient-to-r from-[#006BFF] to-[#006BFF] rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="absolute -inset-1 bg-gradient-to-r from-[#3550f7] to-[#3550f7] rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
         
-        <div class="relative w-full aspect-[4/5] rounded-[1.8rem] overflow-hidden border border-white/10 shadow-2xl bg-[#071952]">
+        <div class="relative w-full aspect-[4/5] rounded-[1.8rem] overflow-hidden border border-white/10 shadow-2xl bg-[#3550f7]">
             
             <img src="Images/Pages/FOTO_PROFIL.png" alt="Foto Profil Aditya" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-transparent flex flex-col justify-end p-7 text-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent flex flex-col justify-end p-7 text-center">
                 
                 <div class="mb-4">
                     <p class="font-mono-custom text-[10px] tracking-widest text-highlight uppercase mb-1">Born</p>
@@ -343,11 +303,11 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-24 bg-[#071952] relative z-20 border-t border-outline">
+    <section id="portfolio" class="py-24 bg-[#3550f7] relative z-20 border-t border-white/10">
         <div class="max-w-6xl mx-auto px-4">
             
             <div class="text-center mb-12">
-                <span class="font-mono-custom text-[10px] text-[#E8F9FF] tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">02 // Selected Works</span>
+                <span class="font-mono-custom text-[10px] text-white tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">02 // Selected Works</span>
                 <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase text-white" data-aos="fade-up" data-aos-delay="50">Creative Portfolio</h2>
             </div>
 
@@ -361,7 +321,7 @@
                 <button class="tab-btn" :class="filter === 'feed-fnb' ? 'active' : ''" @click="filter = 'feed-fnb'">
                     <i class="fa-regular fa-circle mr-2 text-[11px]"></i>Feed FnB
                 </button>
-                <button class="tab-btn" :class="filter === 'feed-fashion' ? 'active' : ''" @click="filter = 'feed-fashion">
+                <button class="tab-btn" :class="filter === 'feed-fashion' ? 'active' : ''" @click="filter = 'feed-fashion'">
                     <i class="fa-regular fa-circle mr-2 text-[11px]"></i>Feed Fashion
                 </button>
                 <button class="tab-btn" :class="filter === 'feed-skincare' ? 'active' : ''" @click="filter = 'feed-skincare'">
@@ -380,18 +340,18 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <template x-for="project in filteredProjects" :key="project.id">
-                    <div class="aspect-[1/1] relative overflow-hidden bg-black/40 border border-outline rounded-sm cursor-pointer hover:-translate-y-1.5 transition-all duration-300 group" data-aos="fade-up" @click="openModal(project)">
+                    <div class="aspect-[1/1] relative overflow-hidden bg-black/40 border border-white/15 rounded-sm cursor-pointer hover:-translate-y-1.5 transition-all duration-300 group" data-aos="fade-up" @click="openModal(project)">
                         
                         <img :src="project.thumb" 
                              :alt="project.title" 
                              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                              loading="lazy">
 
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#006BFF]/95 via-[#071952]/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="font-mono-custom text-[9px] text-[#E8F9FF] tracking-widest uppercase mb-1.5" x-text="project.categoryName"></span>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#3550f7]/95 via-[#3550f7]/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="font-mono-custom text-[9px] text-white tracking-widest uppercase mb-1.5" x-text="project.categoryName"></span>
                             <h3 class="font-display font-black italic text-white text-2xl leading-none uppercase" x-text="project.title"></h3>
                             <p class="text-gray-300 text-xs mt-2 line-clamp-2 font-body" x-text="project.desc"></p>
-                            <span class="mt-4 text-[10px] font-mono-custom text-[#E8F9FF] flex items-center gap-2">
+                            <span class="mt-4 text-[10px] font-mono-custom text-white flex items-center gap-2">
                                 View Case Study <i class="fa-solid fa-arrow-right-long"></i>
                             </span>
                         </div>
@@ -400,96 +360,106 @@
             </div>
         </div>
         <div class="mt-14 flex justify-center" data-aos="fade-up" data-aos-delay="200">
-    <a href="https://www.cosmos.so/adityapriatama/collections" target="_blank" class="border border-[#E8F9FF]/40 text-[#E8F9FF] font-mono-custom font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full flex items-center gap-3 hover:bg-[#E8F9FF]/10 hover:border-[#E8F9FF] hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(232,249,255,0.15)]">
+    <a href="https://www.cosmos.so/adityapriatama/collections" target="_blank" class="border border-white/40 text-white font-mono-custom font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white/10 hover:border-white hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)]">
         See Other Project <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
     </a>
 </div>
     </section>
 
-    <section id="experience" class="py-24 bg-[#071952] relative z-20 border-t border-outline">
-        <div class="max-w-4xl mx-auto px-4">
-            
-            <div class="text-center mb-16">
-                <span class="font-mono-custom text-[10px] text-[#E8F9FF] tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">03 // Timeline</span>
-                <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase text-white" data-aos="fade-up" data-aos-delay="50">Experience & Education</h2>
-            </div>
-
-            <div class="space-y-6">
-                <div class="p-6 border border-outline bg-black/20 hover:border-white/20 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
-                    <div>
-                        <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-[#E8F9FF]/30 text-[#E8F9FF] uppercase tracking-wider rounded-sm">
-                            Professional
-                        </span>
-                        <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">Freelance Graphic & Motion Designer</h3>
-                        <p class="text-gray-400 text-sm mt-0.5 font-body">Graphic Designer · Motion Graphic Designer</p>
-                    </div>
-                    <div class="font-mono-custom text-xs text-[#E8F9FF] bg-[#E8F9FF]/5 px-3 py-1.5 border border-outline rounded-sm self-start md:self-auto">
-                        2021 — PRESENT
-                    </div>
-                </div>
-                <div class="p-6 border border-outline bg-black/20 hover:border-white/20 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
-                    <div>
-                        <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-[#E8F9FF]/30 text-[#E8F9FF] uppercase tracking-wider rounded-sm">
-                            Professional
-                        </span>
-                        <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">Creative Studio Bandung</h3>
-                        <p class="text-gray-400 text-sm mt-0.5 font-body">Junior Graphic Designer</p>
-                    </div>
-                    <div class="font-mono-custom text-xs text-[#E8F9FF] bg-[#E8F9FF]/5 px-3 py-1.5 border border-outline rounded-sm self-start md:self-auto">
-                        2022 — 2023
-                    </div>
-                </div>
-                <div class="p-6 border border-outline bg-black/20 hover:border-white/20 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
-                    <div>
-                        <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-[#E8F9FF]/30 text-[#E8F9FF] uppercase tracking-wider rounded-sm">
-                            Education
-                        </span>
-                        <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">SMK Negeri 4 Bandung</h3>
-                        <p class="text-gray-400 text-sm mt-0.5 font-body">Multimedia · Desain Komunikasi Visual</p>
-                    </div>
-                    <div class="font-mono-custom text-xs text-[#E8F9FF] bg-[#E8F9FF]/5 px-3 py-1.5 border border-outline rounded-sm self-start md:self-auto">
-                        2020 — 2023
-                    </div>
-                </div>
-            </div>
+    <section id="experience" class="py-24 bg-[#FFFFFF] relative z-20 border-t border-[#3550f7]/20">
+    <div class="max-w-4xl mx-auto px-4">
+        
+        <!-- Bagian Judul (Luar Tabel) -->
+        <div class="text-center mb-16">
+            <span class="font-mono-custom text-[10px] text-[#3550f7] tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">03 // Timeline</span>
+            <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase text-[#3550f7]" data-aos="fade-up" data-aos-delay="50">Experience & Education</h2>
         </div>
-    </section>
 
-    <section id="contact" class="py-24 bg-[#071952] relative z-20 border-t border-outline mb-12">
+        <!-- Bagian Isi (Tabel/Kotak Pengalaman) -->
+        <div class="space-y-6">
+            
+            <!-- Item 1 -->
+            <div class="p-6 bg-[#3550f7] border border-[#3550f7] rounded-md shadow-lg hover:bg-[#3550f7]/90 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
+                <div>
+                    <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-white/40 text-white uppercase tracking-wider rounded-sm">
+                        Professional
+                    </span>
+                    <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">Freelance Graphic & Motion Designer</h3>
+                    <!-- Menggunakan text-white/80 agar sedikit lebih redup dari judul tapi tetap putih -->
+                    <p class="text-white/80 text-sm mt-0.5 font-body">Graphic Designer · Motion Graphic Designer</p>
+                </div>
+                <div class="font-mono-custom text-xs text-white bg-white/10 px-3 py-1.5 border border-white/30 rounded-sm self-start md:self-auto">
+                    2021 — PRESENT
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="p-6 bg-[#3550f7] border border-[#3550f7] rounded-md shadow-lg hover:bg-[#3550f7]/90 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
+                <div>
+                    <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-white/40 text-white uppercase tracking-wider rounded-sm">
+                        Professional
+                    </span>
+                    <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">Creative Studio Bandung</h3>
+                    <p class="text-white/80 text-sm mt-0.5 font-body">Junior Graphic Designer</p>
+                </div>
+                <div class="font-mono-custom text-xs text-white bg-white/10 px-3 py-1.5 border border-white/30 rounded-sm self-start md:self-auto">
+                    2022 — 2023
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="p-6 bg-[#3550f7] border border-[#3550f7] rounded-md shadow-lg hover:bg-[#3550f7]/90 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4" data-aos="fade-up">
+                <div>
+                    <span class="font-mono-custom text-[9px] px-2 py-0.5 border border-white/40 text-white uppercase tracking-wider rounded-sm">
+                        Education
+                    </span>
+                    <h3 class="font-display font-bold italic text-xl text-white mt-2 uppercase tracking-wide">SMK Negeri 4 Bandung</h3>
+                    <p class="text-white/80 text-sm mt-0.5 font-body">Multimedia · Desain Komunikasi Visual</p>
+                </div>
+                <div class="font-mono-custom text-xs text-white bg-white/10 px-3 py-1.5 border border-white/30 rounded-sm self-start md:self-auto">
+                    2020 — 2023
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="py-24 bg-[#3550f7] relative z-20 border-t border-white/10 mb-12">
         <div class="max-w-4xl mx-auto px-4 text-center">
             
             <div class="mb-14">
-                <span class="font-mono-custom text-[10px] text-[#E8F9FF] tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">04 // Connection</span>
+                <span class="font-mono-custom text-[10px] text-white tracking-[0.3em] uppercase block mb-3" data-aos="fade-up">04 // Connection</span>
                 <h2 class="font-display font-black italic text-4xl md:text-5xl uppercase text-white" data-aos="fade-up" data-aos-delay="50">Get In Touch</h2>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
                 
-                <a href="https://wa.me/62895333250098" target="_blank" class="group block border border-outline bg-black/20 p-8 rounded-xl hover:bg-[#E8F9FF] hover:border-[#E8F9FF] transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="0">
-                    <div class="w-14 h-14 bg-[#E8F9FF]/10 border border-[#E8F9FF]/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#006BFF]/10 group-hover:border-[#006BFF]/20 transition-colors mx-auto">
-                        <i class="fa-brands fa-whatsapp text-2xl text-[#E8F9FF] group-hover:text-[#006BFF] transition-colors"></i>
+                <a href="https://wa.me/62895333250098" target="_blank" class="group block border border-white/15 bg-black/20 p-8 rounded-xl hover:bg-white hover:border-white transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 bg-white/10 border border-white/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#3550f7]/10 group-hover:border-[#3550f7]/20 transition-colors mx-auto">
+                        <i class="fa-brands fa-whatsapp text-2xl text-white group-hover:text-[#3550f7] transition-colors"></i>
                     </div>
-                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#006BFF]/70 transition-colors mb-2">WhatsApp</p>
-                    <h3 class="font-display font-bold italic text-xl text-white group-hover:text-[#006BFF] transition-colors">0895 3332 50098</h3>
-                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#006BFF]/80 transition-colors">Chat anytime</p>
+                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#3550f7]/70 transition-colors mb-2">WhatsApp</p>
+                    <h3 class="font-display font-bold italic text-xl text-white group-hover:text-[#3550f7] transition-colors">0895 3332 50098</h3>
+                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#3550f7]/80 transition-colors">Chat anytime</p>
                 </a>
 
-                <a href="https://instagram.com/adityapriatama" target="_blank" class="group block border border-outline bg-black/20 p-8 rounded-xl hover:bg-[#E8F9FF] hover:border-[#E8F9FF] transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-[#E8F9FF]/10 border border-[#E8F9FF]/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#006BFF]/10 group-hover:border-[#006BFF]/20 transition-colors mx-auto">
-                        <i class="fa-brands fa-instagram text-2xl text-[#E8F9FF] group-hover:text-[#006BFF] transition-colors"></i>
+                <a href="https://instagram.com/adityapriatama" target="_blank" class="group block border border-white/15 bg-black/20 p-8 rounded-xl hover:bg-white hover:border-white transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-white/10 border border-white/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#3550f7]/10 group-hover:border-[#3550f7]/20 transition-colors mx-auto">
+                        <i class="fa-brands fa-instagram text-2xl text-white group-hover:text-[#3550f7] transition-colors"></i>
                     </div>
-                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#006BFF]/70 transition-colors mb-2">Instagram</p>
-                    <h3 class="font-display font-bold italic text-xl text-white group-hover:text-[#006BFF] transition-colors">@adityapriatama</h3>
-                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#006BFF]/80 transition-colors">See my work</p>
+                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#3550f7]/70 transition-colors mb-2">Instagram</p>
+                    <h3 class="font-display font-bold italic text-xl text-white group-hover:text-[#3550f7] transition-colors">@adityapriatama</h3>
+                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#3550f7]/80 transition-colors">See my work</p>
                 </a>
 
-                <a href="mailto:adityapriatama54@gmail.com" class="group block border border-outline bg-black/20 p-8 rounded-xl hover:bg-[#E8F9FF] hover:border-[#E8F9FF] transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-[#E8F9FF]/10 border border-[#E8F9FF]/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#006BFF]/10 group-hover:border-[#006BFF]/20 transition-colors mx-auto">
-                        <i class="fa-regular fa-envelope text-2xl text-[#E8F9FF] group-hover:text-[#006BFF] transition-colors"></i>
+                <a href="mailto:adityapriatama54@gmail.com" class="group block border border-white/15 bg-black/20 p-8 rounded-xl hover:bg-white hover:border-white transition-all duration-300 hover:-translate-y-1 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-white/10 border border-white/20 rounded-full flex items-center justify-center mb-5 group-hover:bg-[#3550f7]/10 group-hover:border-[#3550f7]/20 transition-colors mx-auto">
+                        <i class="fa-regular fa-envelope text-2xl text-white group-hover:text-[#3550f7] transition-colors"></i>
                     </div>
-                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#006BFF]/70 transition-colors mb-2">Email</p>
-                    <h3 class="font-display font-bold italic text-lg text-white group-hover:text-[#006BFF] transition-colors break-all">adityapriatama54<br>@gmail.com</h3>
-                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#006BFF]/80 transition-colors">Drop a message</p>
+                    <p class="font-mono-custom text-[9px] tracking-widest uppercase text-gray-400 group-hover:text-[#3550f7]/70 transition-colors mb-2">Email</p>
+                    <h3 class="font-display font-bold italic text-lg text-white group-hover:text-[#3550f7] transition-colors break-all">adityapriatama54<br>@gmail.com</h3>
+                    <p class="text-gray-400 text-xs mt-1 group-hover:text-[#3550f7]/80 transition-colors">Drop a message</p>
                 </a>
             </div>
 
@@ -509,7 +479,7 @@
         
         <div class="absolute inset-0 bg-black/80 backdrop-blur-lg" @click="modalOpen = false"></div>
 
-        <div class="relative bg-[#071952] border border-outline w-full max-w-5xl max-h-[90vh] md:max-h-[85vh] overflow-y-auto flex flex-col md:flex-row shadow-2xl rounded-sm"
+        <div class="relative bg-[#3550f7] border border-white/15 w-full max-w-5xl max-h-[90vh] md:max-h-[85vh] overflow-y-auto flex flex-col md:flex-row shadow-2xl rounded-sm"
              @click.away="modalOpen = false">
             
             <div class="w-full md:w-1/2 bg-black/90 flex items-center justify-center relative border-b md:border-b-0 md:border-r border-outline p-4 md:p-6 min-h-[45vh] md:min-h-0">
@@ -542,10 +512,10 @@
 
             </div>
 
-            <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-between bg-[#071952]">
+            <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-between bg-[#3550f7]">
                 <div>
                     <div class="flex items-center justify-between mb-6">
-                        <span class="font-mono-custom text-[10px] text-[#E8F9FF] border border-[#E8F9FF]/30 px-3 py-1 tracking-widest uppercase rounded-sm" x-text="activeProject ? activeProject.categoryName : ''"></span>
+                        <span class="font-mono-custom text-[10px] text-white border border-white/30 px-3 py-1 tracking-widest uppercase rounded-sm" x-text="activeProject ? activeProject.categoryName : ''"></span>
                         
                         <button @click="modalOpen = false" class="text-gray-400 hover:text-white transition-colors cursor-pointer p-1">
                             <i class="fa-solid fa-xmark text-lg"></i>
@@ -553,12 +523,12 @@
                     </div>
 
                     <h3 class="font-display font-black italic text-3xl md:text-4xl text-white uppercase tracking-wide leading-none mb-4" x-text="activeProject ? activeProject.title : ''"></h3>
-                    <div class="w-12 h-[2px] bg-[#E8F9FF] mb-6"></div>
+                    <div class="w-12 h-[2px] bg-white mb-6"></div>
                     <p class="text-sm md:text-base text-gray-300 leading-relaxed font-body" x-text="activeProject ? activeProject.desc : ''"></p>
                 </div>
 
-                <div class="mt-8 pt-6 border-t border-outline">
-                    <button @click="modalOpen = false" class="w-full bg-white/5 border border-outline hover:border-[#E8F9FF] text-white hover:text-[#E8F9FF] font-mono-custom text-xs uppercase tracking-widest py-3.5 transition-all duration-300 cursor-pointer">
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <button @click="modalOpen = false" class="w-full bg-white/5 border border-white/15 hover:border-white text-white hover:text-white font-mono-custom text-xs uppercase tracking-widest py-3.5 transition-all duration-300 cursor-pointer">
                         Back To Gallery
                     </button>
                 </div>
@@ -584,7 +554,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ads.webp",
                         media: "Images/Project/ads.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for skincare products, featuring attractive, modern, and brand-aligned visuals. Designed to highlight product benefits, build consumer trust, strengthen brand identity, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     {
@@ -594,7 +564,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ADS2.webp",
                         media: "Images/Project/ADS2.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     {
@@ -604,7 +574,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ADS3.webp",
                         media: "Images/Project/ADS3.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for skincare products, featuring attractive, modern, and brand-aligned visuals. Designed to highlight product benefits, build consumer trust, strengthen brand identity, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     {
@@ -614,7 +584,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ADS4.webp",
                         media: "Images/Project/ADS4.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     {
@@ -624,7 +594,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ADS5.jpg",
                         media: "Images/Project/ADS5.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     {
@@ -634,7 +604,7 @@
                         categoryName: "Motion ADS",
                         thumb: "Images/Thumb/ADS6.jpg",
                         media: "Images/Project/ADS6.webm",
-                        desc: "Desain flyer pertandingan football dengan visual dinamis dan komposisi tipografi yang kuat untuk menarik perhatian penonton.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: true
                     },
                     // NIGHT CLUB
@@ -645,7 +615,7 @@
                         categoryName: "Motion Nightclub",
                         thumb: "Images/Thumb/NC.webp",
                         media: "Images/Project/NC.webm",
-                        desc: "Video aftermovie event musik lokal dengan color grading sinematik dan motion graphic yang memukau.",
+                        desc: "Creation of motion graphics for nightclub events, featuring an energetic, modern, and sophisticated visual style designed for social media promotions, LED screen displays, and digital advertising campaigns.",
                         isMotion: true
                     },
                      {
@@ -655,7 +625,7 @@
                         categoryName: "Motion Nightclub",
                         thumb: "Images/Thumb/NC2.webp",
                         media: "Images/Project/NC2.webm",
-                        desc: "Video aftermovie event musik lokal dengan color grading sinematik dan motion graphic yang memukau.",
+                        desc: "Creation of motion graphics for nightclub events, featuring an energetic, modern, and sophisticated visual style designed for social media promotions, LED screen displays, and digital advertising campaigns.",
                         isMotion: true
                     },
                      {
@@ -665,7 +635,7 @@
                         categoryName: "Motion Nightclub",
                         thumb: "Images/Thumb/NC3.webp",
                         media: "Images/Project/NC3.webm",
-                        desc: "Video aftermovie event musik lokal dengan color grading sinematik dan motion graphic yang memukau.",
+                        desc: "Creation of motion graphics for nightclub events, featuring an energetic, modern, and sophisticated visual style designed for social media promotions, LED screen displays, and digital advertising campaigns.",
                         isMotion: true
                     },
                      {
@@ -675,7 +645,7 @@
                         categoryName: "Motion Nightclub",
                         thumb: "Images/Thumb/NC4.webp",
                         media: "Images/Project/NC4.webm",
-                        desc: "Video aftermovie event musik lokal dengan color grading sinematik dan motion graphic yang memukau.",
+                        desc: "Creation of motion graphics for nightclub events, featuring an energetic, modern, and sophisticated visual style designed for social media promotions, LED screen displays, and digital advertising campaigns.",
                         isMotion: true
                     },
                      {
@@ -685,7 +655,7 @@
                         categoryName: "Motion Nightclub",
                         thumb: "Images/Thumb/NC5.jpg",
                         media: "Images/Project/NC5.webm",
-                        desc: "Video aftermovie event musik lokal dengan color grading sinematik dan motion graphic yang memukau.",
+                        desc: "Creation of motion graphics for nightclub events, featuring an energetic, modern, and sophisticated visual style designed for social media promotions, LED screen displays, and digital advertising campaigns.",
                         isMotion: true
                     },
                     // FEED 
@@ -696,7 +666,7 @@
                         categoryName: "Feed FnB",
                         thumb: "Images/Poster/FFB.webp",
                         media: "Images/Poster/FFB.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed content for F&B brands with engaging, modern, and visually consistent designs to enhance product appeal, strengthen brand identity, and support social media marketing and promotional campaigns.",
                         isMotion: false
                     },
                     {
@@ -706,7 +676,7 @@
                         categoryName: "Feed FnB",
                         thumb: "Images/Poster/FFB2.webp",
                         media: "Images/Poster/FFB2.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed content for F&B brands with engaging, modern, and visually consistent designs to enhance product appeal, strengthen brand identity, and support social media marketing and promotional campaigns.",
                         isMotion: false
                     },
                     {
@@ -716,7 +686,7 @@
                         categoryName: "Feed FnB",
                         thumb: "Images/Poster/FFB3.webp",
                         media: "Images/Poster/FFB3.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed content for F&B brands with engaging, modern, and visually consistent designs to enhance product appeal, strengthen brand identity, and support social media marketing and promotional campaigns.",
                         isMotion: false
                     },
                     {
@@ -726,7 +696,7 @@
                         categoryName: "Feed Fashion",
                         thumb: "Images/Poster/FF.webp",
                         media: "Images/Poster/FF.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -736,7 +706,7 @@
                         categoryName: "Feed Fashion",
                         thumb: "Images/Poster/FF2.webp",
                         media: "Images/Poster/FF2.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -746,7 +716,7 @@
                         categoryName: "Feed Fashion",
                         thumb: "Images/Poster/FF3.webp",
                         media: "Images/Poster/FF3.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for fashion brands, featuring modern, engaging, and brand-aligned visuals. Designed to showcase product collections effectively, strengthen brand image, increase audience engagement, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -756,7 +726,7 @@
                         categoryName: "Feed Skincare",
                         thumb: "Images/Poster/FS.webp",
                         media: "Images/Poster/FS.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for skincare products, featuring attractive, modern, and brand-aligned visuals. Designed to highlight product benefits, build consumer trust, strengthen brand identity, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -766,7 +736,7 @@
                         categoryName: "Feed Skincare",
                         thumb: "Images/Poster/FS2.webp",
                         media: "Images/Poster/FS2.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for skincare products, featuring attractive, modern, and brand-aligned visuals. Designed to highlight product benefits, build consumer trust, strengthen brand identity, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -776,7 +746,7 @@
                         categoryName: "Feed Skincare",
                         thumb: "Images/Poster/FS3.webp",
                         media: "Images/Poster/FS3.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of Instagram feed designs for skincare products, featuring attractive, modern, and brand-aligned visuals. Designed to highlight product benefits, build consumer trust, strengthen brand identity, and support promotional and marketing activities across social media platforms.",
                         isMotion: false
                     },
                     {
@@ -786,7 +756,7 @@
                         categoryName: "Puzzle Feed",
                         thumb: "Images/Poster/PZF.webp",
                         media: "Images/Poster/PZF.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of a 3-Grid Instagram Puzzle Feed featuring creative, cohesive, and brand-aligned visuals. Designed so that each post connects seamlessly to form an attractive and professional feed layout, enhancing visual appeal and increasing audience engagement.",
                         isMotion: false
                     },
                     {
@@ -796,7 +766,7 @@
                         categoryName: "Puzzle Feed",
                         thumb: "Images/Poster/PZF2.webp",
                         media: "Images/Poster/PZF2.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of a 3-Grid Instagram Puzzle Feed featuring creative, cohesive, and brand-aligned visuals. Designed so that each post connects seamlessly to form an attractive and professional feed layout, enhancing visual appeal and increasing audience engagement.",
                         isMotion: false
                     },
                     {
@@ -806,7 +776,7 @@
                         categoryName: "Puzzle Feed",
                         thumb: "Images/Poster/PZF3.webp",
                         media: "Images/Poster/PZF3.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Creation of a 3-Grid Instagram Puzzle Feed featuring creative, cohesive, and brand-aligned visuals. Designed so that each post connects seamlessly to form an attractive and professional feed layout, enhancing visual appeal and increasing audience engagement.",
                         isMotion: false
                     },
                     {
@@ -816,7 +786,7 @@
                         categoryName: "Photo Colorgrade",
                         thumb: "Images/Poster/CG.webp",
                         media: "Images/Poster/CG.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Photo color grading services to enhance visual quality, color consistency, and the overall mood of an image according to brand requirements or creative concepts. The process includes adjustments to color, contrast, lighting, and tones to achieve a more professional and visually appealing result.",
                         isMotion: false
                     },
                     {
@@ -826,7 +796,7 @@
                         categoryName: "Photo Colorgrade",
                         thumb: "Images/Poster/CG2.webp",
                         media: "Images/Poster/CG2.webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Photo color grading services to enhance visual quality, color consistency, and the overall mood of an image according to brand requirements or creative concepts. The process includes adjustments to color, contrast, lighting, and tones to achieve a more professional and visually appealing result.",
                         isMotion: false
                     },
                     {
@@ -836,7 +806,7 @@
                         categoryName: "Photo Colorgrade",
                         thumb: "Images/Poster/CG3.webp",
                         media: "Images/Poster/CG3   .webp",
-                        desc: "Desain puzzle feed Instagram 9-grid yang membentuk satu komposisi visual utuh saat disusun di profil.",
+                        desc: "Photo color grading services to enhance visual quality, color consistency, and the overall mood of an image according to brand requirements or creative concepts. The process includes adjustments to color, contrast, lighting, and tones to achieve a more professional and visually appealing result.",
                         isMotion: false
                     },
 
@@ -886,7 +856,7 @@
 
         document.querySelectorAll('a, button, [role="button"], .tab-btn').forEach(el => {
             el.addEventListener('mouseenter', () => { dot.style.background = '#FFFFFF'; }); 
-            el.addEventListener('mouseleave', () => { dot.style.background = '#E8F9FF'; });
+            el.addEventListener('mouseleave', () => { dot.style.background = '#ffffff'; });
         });
     </script>
     <script type="module">
@@ -897,7 +867,7 @@
         const container = document.getElementById('threads-container');
         if (!container) return;
 
-        // Palet warna garis menggunakan warna Primary Anda (#E8F9FF)
+        // Palet warna garis menggunakan warna Primary Anda (#ffffff)
         // RGB dalam format 0.0 - 1.0 (R: 0.91, G: 0.976, B: 1.0)
         const color = [0.91, 0.976, 1.0];
         const amplitude = 1.0;
